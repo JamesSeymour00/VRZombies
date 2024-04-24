@@ -5,8 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRExclusiveSocket : XRSocketInteractor
 {
-	[SerializeField]
-	string _acceptedTag;
+	[SerializeField] string _acceptedTag;
 
 	// Generate the visual mesh if true
 	public override bool CanHover(IXRHoverInteractable interactable)

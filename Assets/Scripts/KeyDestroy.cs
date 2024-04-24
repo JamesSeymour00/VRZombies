@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class IgnoreCollisionsWithSocket : MonoBehaviour
+public class KeyDestroy : MonoBehaviour
 {
 	XRExclusiveSocket _socket;
-
-	[SerializeField]
-	Collider _ourCollider = null;
-	Collider _theirCollider;
 
 	private void Awake()
 	{
@@ -18,19 +15,11 @@ public class IgnoreCollisionsWithSocket : MonoBehaviour
 		Assert.IsNotNull(_socket);
 
 		_socket.selectEntered.AddListener(OnSelectEntered);
-		_socket.selectExited.AddListener(OnSelectExited);
 	}
 
 	void OnSelectEntered(SelectEnterEventArgs args)
 	{
 		GameObject other = args.interactableObject.transform.gameObject;
-		_theirCollider = other.GetComponent<Collider>();
-
-		Physics.IgnoreCollision(_ourCollider, _theirCollider, true);
-	}
-
-	void OnSelectExited(SelectExitEventArgs args)
-	{
-		Physics.IgnoreCollision(_ourCollider, _theirCollider, false);
+		Destroy(other);
 	}
 }
