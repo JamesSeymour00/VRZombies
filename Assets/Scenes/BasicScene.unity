@@ -1013,7 +1013,7 @@ PrefabInstance:
     - target: {fileID: 152969825147294817, guid: a9b1680e34130ca45b1fa59ea17fce9f, type: 3}
       propertyPath: m_StartingSelectedInteractable
       value: 
-      objectReference: {fileID: 6791116422039865483, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
+      objectReference: {fileID: 1299187501}
     - target: {fileID: 5536856679302491584, guid: a9b1680e34130ca45b1fa59ea17fce9f, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234fb6b41e2381e469b8efe8743e0fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractablePrefab: {fileID: 6791116422039865483, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
+  m_InteractablePrefab: {fileID: 1299187501}
 --- !u!43 &384025663
 Mesh:
   m_ObjectHideFlags: 0
@@ -3770,6 +3770,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1299187501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6791116422039865483, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
+  m_PrefabInstance: {fileID: 1489369718}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407654215
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,15 +4623,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833940838084410364, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.93235016
+      value: -1.676
       objectReference: {fileID: 0}
     - target: {fileID: 3833940838084410364, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.165
+      value: 1.291
       objectReference: {fileID: 0}
     - target: {fileID: 3833940838084410364, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2040663
+      value: 1.664
       objectReference: {fileID: 0}
     - target: {fileID: 3833940838084410364, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
       propertyPath: m_LocalRotation.w
