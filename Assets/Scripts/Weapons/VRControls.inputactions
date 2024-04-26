@@ -1,0 +1,34 @@
+{
+    "name": "Experimental",
+    "maps": [
+        {
+            "name": "VRPlayer",
+            "id": "d2322a0c-f30a-41d5-a000-1ac8a64f5ef2",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "da21a405-3e9c-42ff-adf1-e28870720f97",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2437808a-3974-4a6f-b114-63f3831f05bf",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

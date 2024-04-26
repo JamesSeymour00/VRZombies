@@ -8,6 +8,7 @@ TagManager:
   - Ammo
   - Key
   - Locked
+  - Weapon
   layers:
   - Default
   - TransparentFX

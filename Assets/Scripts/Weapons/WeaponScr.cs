@@ -4,37 +4,35 @@ using UnityEngine;
 
 public class WeaponScr : MonoBehaviour
 {
-	//[SerializeField] GameObject _projectile;
-	//[SerializeField] Transform _gunTip;
-	//[SerializeField] WeaponDataSO _data;
-	//private InputManager PlayerInput;
-	//private Rigidbody _bulletRB;
+	[SerializeField] Transform _gunTip;
+	[SerializeField] WeaponDataSO _data;
+	public bool _isHeld;
 
-	//private void Awake()
-	//{
-	//	PlayerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<InputManager>();
-	//}
+	private void Update()
+	{
+		Debug.DrawRay(_gunTip.position, _gunTip.up);
+	}
 
-	//private void Update()
-	//{
-	//	if (PlayerInput._shoot == true)
-	//	{
-	//		Shoot();
-	//	}
-	//}
+	public void Shoot()
+	{
+		if (Physics.Raycast(_gunTip.position, _gunTip.up, out RaycastHit hitInfo /*, _data._MaxGunRange*/))
+		{
+			Debug.Log(hitInfo.transform.name);
+		}
 
-	//private void Shoot()
-	//{
-	//	if (Physics.Raycast(_gunTip.position, _gunTip.forward, out RaycastHit hitInfo /*, _data._MaxGunRange*/))
-	//	{
-	//		Debug.Log(hitInfo.transform.name);
-	//	}
+		OnGunShot();
+	}
+	void OnGunShot()
+	{
 
-	//	OnGunShot();
-	//}
+	}
 
-	//void OnGunShot()
-	//{
-
-	//}
+	public void HoldWeapon()
+	{
+		_isHeld = true;
+	}
+	public void ReleaseWeapon()
+	{
+		_isHeld = false;
+	}
 }
