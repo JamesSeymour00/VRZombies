@@ -9,26 +9,26 @@ using UnityEngine.UIElements;
 
 public class InputManager : MonoBehaviour
 {
-	private VRControls _inputActions;
+	private VRControls scr_inputActions;
 
-	GameObject[] PossibleWeapons;
-	WeaponScr SelectedWeapon;
+	GameObject[] g_PossibleWeapons;
+	WeaponScr g_SelectedWeapon;
 
 	private void Awake()
 	{
-		_inputActions = new VRControls();
+		scr_inputActions = new VRControls();
 	}
 
 	private void OnEnable()
 	{
-		_inputActions.VRPlayer.Shoot.performed += ShootPerformed;
-		_inputActions.VRPlayer.Shoot.Enable();
+		scr_inputActions.VRPlayer.Shoot.performed += ShootPerformed;
+		scr_inputActions.VRPlayer.Shoot.Enable();
 	}
 
 	private void OnDisable()
 	{
-		_inputActions.VRPlayer.Shoot.performed -= ShootPerformed;
-		_inputActions.VRPlayer.Shoot.Disable();
+		scr_inputActions.VRPlayer.Shoot.performed -= ShootPerformed;
+		scr_inputActions.VRPlayer.Shoot.Disable();
 	}
 
 	private void ShootPerformed(InputAction.CallbackContext context)
@@ -38,14 +38,14 @@ public class InputManager : MonoBehaviour
 
 	public void FindHeldWeapon()
 	{
-		PossibleWeapons = GameObject.FindGameObjectsWithTag("Weapon");
+		g_PossibleWeapons = GameObject.FindGameObjectsWithTag("Weapon");
 
-		for (int i = 0; i < PossibleWeapons.Length; i++)
+		for (int i = 0; i < g_PossibleWeapons.Length; i++)
 		{
-			if (PossibleWeapons[i].GetComponent<WeaponScr>()._isHeld == true)
+			if (g_PossibleWeapons[i].GetComponent<WeaponScr>().b_isHeld == true)
 			{
-				SelectedWeapon = PossibleWeapons[i].GetComponent<WeaponScr>();
-				SelectedWeapon.Shoot();
+				g_SelectedWeapon = g_PossibleWeapons[i].GetComponent<WeaponScr>();
+				g_SelectedWeapon.Shoot();
 				return;
 			}
 		}

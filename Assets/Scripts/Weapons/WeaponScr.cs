@@ -4,35 +4,57 @@ using UnityEngine;
 
 public class WeaponScr : MonoBehaviour
 {
-	[SerializeField] Transform _gunTip;
-	[SerializeField] WeaponDataSO _data;
-	public bool _isHeld;
+	[SerializeField] Transform t_gunTip;
+	[SerializeField] WeaponDataSO scr_data;
+	private MagazineScr scr_mag;
+	public bool b_magAttached;
+	public bool b_isHeld;
 
 	private void Update()
 	{
-		Debug.DrawRay(_gunTip.position, _gunTip.up);
+		Debug.DrawRay(t_gunTip.position, t_gunTip.up);
 	}
 
 	public void Shoot()
 	{
-		if (Physics.Raycast(_gunTip.position, _gunTip.up, out RaycastHit hitInfo /*, _data._MaxGunRange*/))
+		if (scr_mag.i_AmmoCount > 0)
 		{
-			Debug.Log(hitInfo.transform.name);
-		}
-
-		OnGunShot();
+			if (Physics.Raycast(t_gunTip.position, t_gunTip.up, out RaycastHit hitInfo, scr_data.f_effectiveRange))
+			{
+				Debug.Log(hitInfo.transform.name);
+				scr_mag.i_AmmoCount--;
+			}
+		}	
 	}
-	void OnGunShot()
-	{
 
+	private void OnTriggerEnter(Collider other)
+	{
+		if (b_magAttached)
+		{
+			scr_mag = other.GetComponent<MagazineScr>();
+		}
+	}
+
+	public void AttachMag()
+	{
+		Debug.Log("Attaching mag");
+		b_magAttached = true;
+	}
+
+	public void EjectMag()
+	{
+		Debug.Log("Ejecting mag");
+		b_magAttached = false;
 	}
 
 	public void HoldWeapon()
 	{
-		_isHeld = true;
+		Debug.Log("Holding weapon");
+		b_isHeld = true;
 	}
 	public void ReleaseWeapon()
 	{
-		_isHeld = false;
+		Debug.Log("Releasing weapon");
+		b_isHeld = false;
 	}
 }
