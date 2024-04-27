@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponScr : MonoBehaviour
@@ -7,6 +8,7 @@ public class WeaponScr : MonoBehaviour
 	[SerializeField] Transform t_gunTip;
 	[SerializeField] WeaponDataSO scr_data;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
+	[SerializeField] int grabs;
 	private MagazineScr scr_mag;
 	public bool b_magAttached;
 	public bool b_isHeld;
@@ -25,6 +27,7 @@ public class WeaponScr : MonoBehaviour
 			{
 				Debug.Log(hitInfo.transform.name);
 				scr_mag.i_AmmoCount--;
+				scr_mag.UpdateMagUI();
 			}
 		}
 	}
@@ -53,17 +56,23 @@ public class WeaponScr : MonoBehaviour
 	{
 		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
 		{
+			grabs++;
 			Debug.Log("Holding weapon");
 			b_isHeld = true;
 		}
 	}
 	public void ReleaseWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
+		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true && grabs == 1)
 		{
-			Debug.Log("Releasing weapon");
+			grabs--;
+			Debug.Log("Releasing weapon");	
 			b_isHeld = false;
 		}
-		else b_isHeld = true;
+		else 
+		{
+			grabs = 1;
+			b_isHeld = true;
+		}		
 	}
 }
