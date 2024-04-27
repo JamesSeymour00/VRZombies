@@ -376,6 +376,8 @@ MonoBehaviour:
   l_IgnoreHoldItem:
     serializedVersion: 2
     m_Bits: 8
+  grabs: 0
+  f_fireRate: 0
   b_magAttached: 0
   b_isHeld: 0
 --- !u!1 &2436966648613347774

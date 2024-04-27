@@ -35,6 +35,15 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FireMode"",
+                    ""type"": ""Button"",
+                    ""id"": ""312bd160-587b-4dc9-9388-aa67ba5a08e4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -48,6 +57,17 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""93f2fa78-7b44-4a3b-85ce-91f12d62bfc4"",
+                    ""path"": ""<XRController>{LeftHand}/triggerPressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FireMode"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -57,6 +77,7 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
         // VRPlayer
         m_VRPlayer = asset.FindActionMap("VRPlayer", throwIfNotFound: true);
         m_VRPlayer_Shoot = m_VRPlayer.FindAction("Shoot", throwIfNotFound: true);
+        m_VRPlayer_FireMode = m_VRPlayer.FindAction("FireMode", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -119,11 +140,13 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_VRPlayer;
     private List<IVRPlayerActions> m_VRPlayerActionsCallbackInterfaces = new List<IVRPlayerActions>();
     private readonly InputAction m_VRPlayer_Shoot;
+    private readonly InputAction m_VRPlayer_FireMode;
     public struct VRPlayerActions
     {
         private @VRControls m_Wrapper;
         public VRPlayerActions(@VRControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Shoot => m_Wrapper.m_VRPlayer_Shoot;
+        public InputAction @FireMode => m_Wrapper.m_VRPlayer_FireMode;
         public InputActionMap Get() { return m_Wrapper.m_VRPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -136,6 +159,9 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
+            @FireMode.started += instance.OnFireMode;
+            @FireMode.performed += instance.OnFireMode;
+            @FireMode.canceled += instance.OnFireMode;
         }
 
         private void UnregisterCallbacks(IVRPlayerActions instance)
@@ -143,6 +169,9 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
+            @FireMode.started -= instance.OnFireMode;
+            @FireMode.performed -= instance.OnFireMode;
+            @FireMode.canceled -= instance.OnFireMode;
         }
 
         public void RemoveCallbacks(IVRPlayerActions instance)
@@ -163,5 +192,6 @@ public partial class @VRControls: IInputActionCollection2, IDisposable
     public interface IVRPlayerActions
     {
         void OnShoot(InputAction.CallbackContext context);
+        void OnFireMode(InputAction.CallbackContext context);
     }
 }

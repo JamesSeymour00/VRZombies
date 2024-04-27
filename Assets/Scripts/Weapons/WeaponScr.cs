@@ -9,7 +9,8 @@ public class WeaponScr : MonoBehaviour
 	[SerializeField] WeaponDataSO scr_data;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
 	[SerializeField] int grabs;
-	public MagazineScr scr_mag;
+	private MagazineScr scr_mag;
+	public float f_fireRate;
 	public bool b_magAttached;
 	public bool b_isHeld;
 
@@ -19,6 +20,12 @@ public class WeaponScr : MonoBehaviour
 		Debug.DrawRay(transform.position, transform.forward * -1, Color.red);
 	}
 
+	private void OnEnable()
+	{
+		f_fireRate = scr_data.f_fireRate;
+	}
+
+	#region SHOOT
 	public void Shoot()
 	{
 		if (scr_mag.i_AmmoCount > 0 && b_magAttached)
@@ -31,7 +38,9 @@ public class WeaponScr : MonoBehaviour
 			}
 		}
 	}
+	#endregion
 
+	#region MAGAZINE
 	private void OnTriggerStay(Collider other)
 	{
 		if (b_magAttached)
@@ -52,7 +61,9 @@ public class WeaponScr : MonoBehaviour
 		b_magAttached = false;
 		scr_mag = null;
 	}
+	#endregion
 
+	#region WEAPON HOLDING/RELEASING
 	public void HoldWeapon()
 	{
 		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
@@ -76,4 +87,5 @@ public class WeaponScr : MonoBehaviour
 			b_isHeld = true;
 		}		
 	}
+	#endregion
 }

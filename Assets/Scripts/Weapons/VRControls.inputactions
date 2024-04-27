@@ -1,5 +1,5 @@
 {
-    "name": "Experimental",
+    "name": "VRControls",
     "maps": [
         {
             "name": "VRPlayer",
@@ -9,6 +9,15 @@
                     "name": "Shoot",
                     "type": "Button",
                     "id": "da21a405-3e9c-42ff-adf1-e28870720f97",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FireMode",
+                    "type": "Button",
+                    "id": "312bd160-587b-4dc9-9388-aa67ba5a08e4",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -24,6 +33,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93f2fa78-7b44-4a3b-85ce-91f12d62bfc4",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

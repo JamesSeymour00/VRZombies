@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e6554d210550446898046cadba9558, type: 3}
   m_Name: BaseWeapon
   m_EditorClassIdentifier: 
-  _bulletSpeed: 100
+  f_effectiveRange: 550
+  f_fireRate: 0.09
