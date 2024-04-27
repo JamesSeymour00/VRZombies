@@ -9,7 +9,7 @@ public class WeaponScr : MonoBehaviour
 	[SerializeField] WeaponDataSO scr_data;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
 	[SerializeField] int grabs;
-	private MagazineScr scr_mag;
+	public MagazineScr scr_mag;
 	public bool b_magAttached;
 	public bool b_isHeld;
 
@@ -32,7 +32,7 @@ public class WeaponScr : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerStay(Collider other)
 	{
 		if (b_magAttached)
 		{
@@ -50,6 +50,7 @@ public class WeaponScr : MonoBehaviour
 	{
 		Debug.Log("Ejecting mag");
 		b_magAttached = false;
+		scr_mag = null;
 	}
 
 	public void HoldWeapon()
