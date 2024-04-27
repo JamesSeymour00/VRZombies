@@ -6,6 +6,7 @@ public class WeaponScr : MonoBehaviour
 {
 	[SerializeField] Transform t_gunTip;
 	[SerializeField] WeaponDataSO scr_data;
+	[SerializeField] LayerMask l_IgnoreHoldItem;
 	private MagazineScr scr_mag;
 	public bool b_magAttached;
 	public bool b_isHeld;
@@ -13,18 +14,19 @@ public class WeaponScr : MonoBehaviour
 	private void Update()
 	{
 		Debug.DrawRay(t_gunTip.position, t_gunTip.up);
+		Debug.DrawRay(transform.position, transform.forward * -1, Color.red);
 	}
 
 	public void Shoot()
 	{
-		if (scr_mag.i_AmmoCount > 0)
+		if (scr_mag.i_AmmoCount > 0 && b_magAttached)
 		{
 			if (Physics.Raycast(t_gunTip.position, t_gunTip.up, out RaycastHit hitInfo, scr_data.f_effectiveRange))
 			{
 				Debug.Log(hitInfo.transform.name);
 				scr_mag.i_AmmoCount--;
 			}
-		}	
+		}
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -49,12 +51,19 @@ public class WeaponScr : MonoBehaviour
 
 	public void HoldWeapon()
 	{
-		Debug.Log("Holding weapon");
-		b_isHeld = true;
+		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
+		{
+			Debug.Log("Holding weapon");
+			b_isHeld = true;
+		}
 	}
 	public void ReleaseWeapon()
 	{
-		Debug.Log("Releasing weapon");
-		b_isHeld = false;
+		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
+		{
+			Debug.Log("Releasing weapon");
+			b_isHeld = false;
+		}
+		else b_isHeld = true;
 	}
 }

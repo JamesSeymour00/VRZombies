@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 1319234341727036310}
   - component: {fileID: 7995238946705967929}
   - component: {fileID: 1796690753127263433}
+  - component: {fileID: 7669851198280968072}
   - component: {fileID: 1735966914911527743}
   - component: {fileID: 3203996903563725738}
-  - component: {fileID: 7669851198280968072}
   - component: {fileID: 7942927724318330226}
   m_Layer: 0
   m_Name: M4
@@ -154,6 +154,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7669851198280968072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294789715406795851}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.009436638, y: 0.1053522, z: 0.033556573}
+  m_Center: {x: 0, y: 0.0021676063, z: 0.000270307}
 --- !u!114 &1735966914911527743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,27 +359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f2f658073e4974d800c553fe797db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &7669851198280968072
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294789715406795851}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.009436638, y: 0.1053522, z: 0.033556573}
-  m_Center: {x: 0, y: 0.0021676063, z: 0.000270307}
 --- !u!114 &7942927724318330226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +373,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t_gunTip: {fileID: 1267358433989087224}
   scr_data: {fileID: 11400000, guid: a89e1dc727e8bdf4b942b7c8d9a25335, type: 2}
+  l_IgnoreHoldItem:
+    serializedVersion: 2
+    m_Bits: 8
   b_magAttached: 0
   b_isHeld: 0
 --- !u!1 &2436966648613347774
