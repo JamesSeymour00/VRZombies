@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_effectiveRange: 550
   f_fireRate: 0.09
+  pe_muzzleFlash: {fileID: 2327208726796981185, guid: dba9c1304df6a9f4abed020edf7d2ba3, type: 3}
+  f_muzzleFlashDuration: 1000

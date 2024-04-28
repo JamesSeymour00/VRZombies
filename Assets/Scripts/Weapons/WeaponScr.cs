@@ -13,10 +13,13 @@ public class WeaponScr : MonoBehaviour
 	public float f_fireRate;
 	public bool b_magAttached;
 	public bool b_isHeld;
+	public float x;
+	public float y;
+	public float z;
 
 	private void Update()
 	{
-		Debug.DrawRay(t_gunTip.position, t_gunTip.up);
+		Debug.DrawRay(t_gunTip.position, t_gunTip.forward);
 		Debug.DrawRay(transform.position, transform.forward * -1, Color.red);
 	}
 
@@ -30,9 +33,10 @@ public class WeaponScr : MonoBehaviour
 	{
 		if (scr_mag.i_AmmoCount > 0 && b_magAttached)
 		{
-			if (Physics.Raycast(t_gunTip.position, t_gunTip.up, out RaycastHit hitInfo, scr_data.f_effectiveRange))
+			if (Physics.Raycast(t_gunTip.position, t_gunTip.forward, out RaycastHit hitInfo, scr_data.f_effectiveRange))
 			{
 				Debug.Log(hitInfo.transform.name);
+				StartCoroutine(ShootVFX_CR());
 				scr_mag.i_AmmoCount--;
 				scr_mag.UpdateMagUI();
 			}
@@ -87,5 +91,19 @@ public class WeaponScr : MonoBehaviour
 			b_isHeld = true;
 		}		
 	}
+	#endregion
+
+	#region Weapon VFX
+
+	IEnumerator ShootVFX_CR()
+	{
+
+		Quaternion newRotation = t_gunTip.rotation;
+		GameObject flash = Instantiate(scr_data.pe_muzzleFlash, t_gunTip.position, newRotation);
+		//PlayOneShot(au_ShootSFX, 10f);
+		yield return new WaitForSeconds(scr_data.f_muzzleFlashDuration);
+		Destroy(flash);
+	}
+
 	#endregion
 }

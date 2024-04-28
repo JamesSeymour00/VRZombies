@@ -7683,6 +7683,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: M4
       objectReference: {fileID: 0}
+    - target: {fileID: 7942927724318330226, guid: 0285927408b24a54cab0bf7f55a8805e, type: 3}
+      propertyPath: x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942927724318330226, guid: 0285927408b24a54cab0bf7f55a8805e, type: 3}
+      propertyPath: y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942927724318330226, guid: 0285927408b24a54cab0bf7f55a8805e, type: 3}
+      propertyPath: z
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 9089843246373204203, guid: 0285927408b24a54cab0bf7f55a8805e, type: 3}
       propertyPath: m_RootOrder
       value: 1
