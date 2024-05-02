@@ -4,4 +4,7 @@ using UnityEngine;
 public class EnemyAI_Data : ScriptableObject
 {
 	public float f_enemySpeed;
+	public float f_enemyHealth;
+	public float f_enemyDamage;
+	public float f_perceptionRadius;
 }

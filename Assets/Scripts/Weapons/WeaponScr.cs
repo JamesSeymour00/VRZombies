@@ -1,67 +1,86 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class WeaponScr : MonoBehaviour
 {
 	[SerializeField] Transform t_gunTip;
-	[SerializeField] WeaponDataSO scr_data;
+	[SerializeField] WeaponDataSO so_weaponData;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
-	[SerializeField] int grabs;
-	private MagazineScr scr_mag;
-	public float f_fireRate;
-	public bool b_magAttached;
+	[HideInInspector] public float f_fireRate;
+	public MagazineScr scr_mag;
+	private int i_grabs;
+	private bool b_magAttached;
+	private GameObject ShootingTarget;
 	public bool b_isHeld;
-	public float x;
-	public float y;
-	public float z;
 
 	private void Update()
 	{
-		Debug.DrawRay(t_gunTip.position, t_gunTip.forward);
+		Debug.DrawRay(t_gunTip.position, t_gunTip.forward, Color.blue);
 		Debug.DrawRay(transform.position, transform.forward * -1, Color.red);
 	}
 
 	private void OnEnable()
 	{
-		f_fireRate = scr_data.f_fireRate;
+		f_fireRate = so_weaponData.f_fireRate;
 	}
 
 	#region SHOOT
 	public void Shoot()
 	{
-		if (scr_mag.i_AmmoCount > 0 && b_magAttached)
+		if (b_magAttached)
 		{
-			if (Physics.Raycast(t_gunTip.position, t_gunTip.forward, out RaycastHit hitInfo, scr_data.f_effectiveRange))
+			if (scr_mag.i_AmmoCount > 0)
 			{
-				Debug.Log(hitInfo.transform.name);
 				StartCoroutine(ShootVFX_CR());
 				scr_mag.i_AmmoCount--;
 				scr_mag.UpdateMagUI();
+
+				Physics.Raycast(t_gunTip.position, t_gunTip.forward, out RaycastHit hitInfo, 550f);
+				ShootingTarget = hitInfo.collider.gameObject;
+
+				Raycast();
+
+				//GameObject Bullet = Instantiate(so_weaponData.go_bulletPrefab, t_gunTip.position, t_gunTip.rotation);
+				//Bullet.GetComponent<Rigidbody>().AddForce(t_gunTip.forward * so_weaponData.f_bulletSpeed, ForceMode.Impulse);
 			}
 		}
+	}
+
+	private void Raycast()
+	{
+		if (ShootingTarget.GetComponent<EnemyAI_Health>())
+		{
+			EnemyAI_Health Target = ShootingTarget.GetComponent<EnemyAI_Health>();
+			Target.TakeDamage(so_weaponData.f_bulletDamage);
+			Debug.Log(Target.name);
+		}
+		else
+			return;
 	}
 	#endregion
 
 	#region MAGAZINE
 	private void OnTriggerStay(Collider other)
 	{
-		if (b_magAttached)
+		if (other.gameObject.tag == "Ammo")
 		{
-			scr_mag = other.GetComponent<MagazineScr>();
-		}
+			if (b_magAttached)
+			{
+				scr_mag = other.GetComponent<MagazineScr>();
+			}
+		}	
 	}
 
 	public void AttachMag()
 	{
-		Debug.Log("Attaching mag");
 		b_magAttached = true;
 	}
 
 	public void EjectMag()
 	{
-		Debug.Log("Ejecting mag");
 		b_magAttached = false;
 		scr_mag = null;
 	}
@@ -72,22 +91,20 @@ public class WeaponScr : MonoBehaviour
 	{
 		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
 		{
-			grabs++;
-			Debug.Log("Holding weapon");
+			i_grabs++;
 			b_isHeld = true;
 		}
 	}
 	public void ReleaseWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true && grabs == 1)
+		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true && i_grabs == 1)
 		{
-			grabs--;
-			Debug.Log("Releasing weapon");	
+			i_grabs--;
 			b_isHeld = false;
 		}
 		else 
 		{
-			grabs = 1;
+			i_grabs = 1;
 			b_isHeld = true;
 		}		
 	}
@@ -97,11 +114,9 @@ public class WeaponScr : MonoBehaviour
 
 	IEnumerator ShootVFX_CR()
 	{
-
-		Quaternion newRotation = t_gunTip.rotation;
-		GameObject flash = Instantiate(scr_data.pe_muzzleFlash, t_gunTip.position, newRotation);
+		GameObject flash = Instantiate(so_weaponData.pe_muzzleFlash, t_gunTip.position, t_gunTip.rotation);
 		//PlayOneShot(au_ShootSFX, 10f);
-		yield return new WaitForSeconds(scr_data.f_muzzleFlashDuration);
+		yield return new WaitForSeconds(so_weaponData.f_muzzleFlashDuration);
 		Destroy(flash);
 	}
 

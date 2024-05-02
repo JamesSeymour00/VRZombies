@@ -372,17 +372,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t_gunTip: {fileID: 1267358433989087224}
-  scr_data: {fileID: 11400000, guid: a89e1dc727e8bdf4b942b7c8d9a25335, type: 2}
+  so_weaponData: {fileID: 11400000, guid: a89e1dc727e8bdf4b942b7c8d9a25335, type: 2}
   l_IgnoreHoldItem:
     serializedVersion: 2
     m_Bits: 8
-  grabs: 0
+  l_mag:
+    serializedVersion: 2
+    m_Bits: 0
+  l_enemy:
+    serializedVersion: 2
+    m_Bits: 128
+  i_grabs: 0
   f_fireRate: 0
-  b_magAttached: 0
+  scr_mag: {fileID: 0}
   b_isHeld: 0
-  x: 0
-  y: 0
-  z: 0
 --- !u!1 &2436966648613347774
 GameObject:
   m_ObjectHideFlags: 0

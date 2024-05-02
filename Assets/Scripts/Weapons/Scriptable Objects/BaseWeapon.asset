@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e6554d210550446898046cadba9558, type: 3}
+  m_Name: BaseWeapon
+  m_EditorClassIdentifier: 
+  f_fireRate: 0.09
+  f_bulletSpeed: 100
+  pe_muzzleFlash: {fileID: 2327208726796981185, guid: dba9c1304df6a9f4abed020edf7d2ba3, type: 3}
+  go_bulletPrefab: {fileID: 5479574606088272215, guid: 478c9f366adb14f4fad7622a6536659f, type: 3}
+  f_muzzleFlashDuration: 0.2
+  f_effectiveRange: 550
+  f_bulletDamage: 15

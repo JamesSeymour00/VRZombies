@@ -12,6 +12,10 @@ public class EnemyAI_Move : MonoBehaviour
 	public Transform t_playerPos;
 	public Collider c_playerCol;
 
+	private bool b_canSeePlayer;
+
+	private Coroutine MoveEnemy_CR;
+
 	private void Start()
 	{
 		nm_enemy = GetComponent<NavMeshAgent>();
@@ -21,13 +25,34 @@ public class EnemyAI_Move : MonoBehaviour
 		nm_enemy.speed = so_enemyData.f_enemySpeed;
 	}
 
-	private void OnTriggerStay(Collider other)
+	private void Update()
 	{
-		Debug.Log("Collision");
-		if (other == c_playerCol)
+		nm_enemy.SetDestination(t_playerPos.position);
+		RadiusCheck();
+	}
+
+	void RadiusCheck()
+	{
+		if (Vector3.Magnitude(t_playerPos.position - transform.position) <= so_enemyData.f_perceptionRadius)
 		{
-			nm_enemy.SetDestination(t_playerPos.position);
-			Debug.Log("Warping");
+			b_canSeePlayer = true;
+			if (MoveEnemy_CR == null)
+				MoveEnemy_CR = StartCoroutine(CR_MoveEnemy());
+		}
+		else
+		{
+			b_canSeePlayer = false;
+			MoveEnemy_CR = null;
+			nm_enemy.speed = so_enemyData.f_enemySpeed;
+		}
+	}
+
+	IEnumerator CR_MoveEnemy()
+	{
+		while (b_canSeePlayer)
+		{
+			nm_enemy.speed = so_enemyData.f_enemySpeed * 2.5f;
+			yield return null;
 		}
 	}
 }

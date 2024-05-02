@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: f4e6554d210550446898046cadba9558
+guid: 573083359a9f59743af9cb42c65bc816
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - pe_muzzleFlash: {fileID: 2327208726796981185, guid: dba9c1304df6a9f4abed020edf7d2ba3, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -12,7 +12,6 @@ public class KeyDestroy : MonoBehaviour
 	private void Awake()
 	{
 		_socket = GetComponent<XRExclusiveSocket>();
-		Assert.IsNotNull(_socket);
 
 		_socket.selectEntered.AddListener(OnSelectEntered);
 	}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2802997375714574360}
   - component: {fileID: 5939659603839567830}
   - component: {fileID: 3608342082531999579}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 5967838922466787388}
   - component: {fileID: 4568733044156570729}
   - component: {fileID: 1780443387964225310}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 1776186576224191520}
   - component: {fileID: 4342328006277607193}
   - component: {fileID: 155002704688325187}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 4359101580137867737}
   - component: {fileID: 5626864376158368514}
   - component: {fileID: 4400490434128769062}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Filler
   m_TagString: Untagged
   m_Icon: {fileID: 0}

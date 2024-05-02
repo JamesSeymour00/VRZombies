@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e6554d210550446898046cadba9558, type: 3}
-  m_Name: BaseWeapon
+  m_Script: {fileID: 11500000, guid: 0b6300b2730da394f9ab53532eb88215, type: 3}
+  m_Name: BaseBullet
   m_EditorClassIdentifier: 
-  f_effectiveRange: 550
-  f_fireRate: 0.09
-  pe_muzzleFlash: {fileID: 2327208726796981185, guid: dba9c1304df6a9f4abed020edf7d2ba3, type: 3}
-  f_muzzleFlashDuration: 0.2
+  f_bulletDamage: 15

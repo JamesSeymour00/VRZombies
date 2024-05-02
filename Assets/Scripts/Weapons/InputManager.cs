@@ -48,12 +48,10 @@ public class InputManager : MonoBehaviour
 		b_triggerHold = true;
 		if (b_fireMode)
 		{
-			Debug.Log("Firemode is active, trying to call the coroutine");
 			if (CR_Shoot == null)
 			{
 				float delay = g_SelectedWeapon.GetComponent<WeaponScr>().f_fireRate;
 				CR_Shoot = StartCoroutine(Shoot_CR(delay));
-				Debug.Log("The coroutine was null and ill start the couroutine now");
 			}
 		}
 		else 
@@ -64,7 +62,6 @@ public class InputManager : MonoBehaviour
 
 	private void ShootCanceled(InputAction.CallbackContext context)
 	{
-		Debug.Log("Cancelling");
 		b_triggerHold = false;
 		if (CR_Shoot != null)
 		{
@@ -76,7 +73,6 @@ public class InputManager : MonoBehaviour
 	private void FireModePerformed(InputAction.CallbackContext context)
 	{
 		b_fireMode = !b_fireMode;
-		Debug.Log("New fire state is: " + b_fireMode);
 	}
 
 
@@ -96,10 +92,8 @@ public class InputManager : MonoBehaviour
 
 	IEnumerator Shoot_CR(float delay)
 	{
-		Debug.Log("Coroutine started!");
 		while (b_triggerHold)
 		{
-			Debug.Log("Firing Auto");
 			g_SelectedWeapon.Shoot();
 			yield return new WaitForSeconds(delay);
 			//yield return null;
