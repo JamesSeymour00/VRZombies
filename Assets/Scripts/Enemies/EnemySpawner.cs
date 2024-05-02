@@ -17,12 +17,10 @@ public class CreateVectors : MonoBehaviour
 		{
 			if (i == 0)
 			{
-				// For the first vector, set it to the origin of the transform
 				newSpawnPoints[i] = transform.position;
 			}
 			else
 			{
-				// For subsequent vectors, calculate based on the previous one and offset
 				newSpawnPoints[i] = newSpawnPoints[i - 1] + v_offset;
 			}
 		}

@@ -8,6 +8,7 @@ public class WeaponDataSO : ScriptableObject
 	public GameObject pe_muzzleFlash;
 	public GameObject go_bulletPrefab;
 	public float f_muzzleFlashDuration;
+	public AudioClip ac_shootFX;
 
 	// OPTIONAL
 

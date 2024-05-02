@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class WeaponScr : MonoBehaviour
 {
 	[SerializeField] Transform t_gunTip;
+	[SerializeField] Transform t_sightTip;
 	[SerializeField] WeaponDataSO so_weaponData;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
+	[SerializeField, Range(0f, 1f)] float f_weaponVolume;
 	[HideInInspector] public float f_fireRate;
+	private AudioSource as_source;
 	public MagazineScr scr_mag;
 	private int i_grabs;
 	private bool b_magAttached;
@@ -25,6 +26,7 @@ public class WeaponScr : MonoBehaviour
 	private void OnEnable()
 	{
 		f_fireRate = so_weaponData.f_fireRate;
+		as_source = GetComponent<AudioSource>();
 	}
 
 	#region SHOOT
@@ -38,10 +40,15 @@ public class WeaponScr : MonoBehaviour
 				scr_mag.i_AmmoCount--;
 				scr_mag.UpdateMagUI();
 
-				Physics.Raycast(t_gunTip.position, t_gunTip.forward, out RaycastHit hitInfo, 550f);
-				ShootingTarget = hitInfo.collider.gameObject;
+				if (Physics.Raycast(t_sightTip.position, t_sightTip.forward, out RaycastHit hitInfo))
+				{
+					ShootingTarget = hitInfo.collider.gameObject;
 
-				Raycast();
+					Raycast();
+				}
+				else
+					return;
+				
 
 				//GameObject Bullet = Instantiate(so_weaponData.go_bulletPrefab, t_gunTip.position, t_gunTip.rotation);
 				//Bullet.GetComponent<Rigidbody>().AddForce(t_gunTip.forward * so_weaponData.f_bulletSpeed, ForceMode.Impulse);
@@ -71,7 +78,7 @@ public class WeaponScr : MonoBehaviour
 			{
 				scr_mag = other.GetComponent<MagazineScr>();
 			}
-		}	
+		}
 	}
 
 	public void AttachMag()
@@ -102,11 +109,11 @@ public class WeaponScr : MonoBehaviour
 			i_grabs--;
 			b_isHeld = false;
 		}
-		else 
+		else
 		{
 			i_grabs = 1;
 			b_isHeld = true;
-		}		
+		}
 	}
 	#endregion
 
@@ -115,7 +122,7 @@ public class WeaponScr : MonoBehaviour
 	IEnumerator ShootVFX_CR()
 	{
 		GameObject flash = Instantiate(so_weaponData.pe_muzzleFlash, t_gunTip.position, t_gunTip.rotation);
-		//PlayOneShot(au_ShootSFX, 10f);
+		as_source.PlayOneShot(so_weaponData.ac_shootFX, f_weaponVolume);
 		yield return new WaitForSeconds(so_weaponData.f_muzzleFlashDuration);
 		Destroy(flash);
 	}
