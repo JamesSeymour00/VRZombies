@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_fireRate: 0.09
   f_bulletSpeed: 100
-  pe_muzzleFlash: {fileID: 2327208726796981185, guid: dba9c1304df6a9f4abed020edf7d2ba3, type: 3}
+  pe_muzzleFlash: {fileID: 718690339124133421, guid: 5abb44553c1cd594bb22884210de0c3f, type: 3}
   go_bulletPrefab: {fileID: 5479574606088272215, guid: 478c9f366adb14f4fad7622a6536659f, type: 3}
   f_muzzleFlashDuration: 0.2
   f_effectiveRange: 550

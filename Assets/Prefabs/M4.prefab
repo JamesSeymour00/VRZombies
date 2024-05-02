@@ -376,13 +376,6 @@ MonoBehaviour:
   l_IgnoreHoldItem:
     serializedVersion: 2
     m_Bits: 8
-  l_mag:
-    serializedVersion: 2
-    m_Bits: 0
-  l_enemy:
-    serializedVersion: 2
-    m_Bits: 128
-  i_grabs: 0
   f_fireRate: 0
   scr_mag: {fileID: 0}
   b_isHeld: 0
