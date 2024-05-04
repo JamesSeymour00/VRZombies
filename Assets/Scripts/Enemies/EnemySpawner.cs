@@ -56,7 +56,7 @@ public class EnemySpawner : CreateVectors
 
 			Instantiate(so_enemySpawnerData.go_enemyPrefab[Random.Range(0, so_enemySpawnerData.go_enemyPrefab.Length)], spawnPointObject.transform);
 			yield return new WaitForSeconds(so_enemySpawnerData.f_spawnRate);
-			yield return null;
 		}
+		Spawn_CR = null;
 	}
 }

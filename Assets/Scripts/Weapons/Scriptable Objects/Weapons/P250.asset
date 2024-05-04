@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4e6554d210550446898046cadba9558, type: 3}
-  m_Name: BaseWeapon
+  m_Name: P250
   m_EditorClassIdentifier: 
-  f_fireRate: 0.09
+  f_fireRate: 2
   f_bulletSpeed: 100
   pe_muzzleFlash: {fileID: 718690339124133421, guid: 5abb44553c1cd594bb22884210de0c3f, type: 3}
   go_bulletPrefab: {fileID: 5479574606088272215, guid: 478c9f366adb14f4fad7622a6536659f, type: 3}
   f_muzzleFlashDuration: 0.2
   ac_shootFX: {fileID: 8300000, guid: 8e2a7b708c325fb419243e6b6ee6f501, type: 3}
-  f_effectiveRange: 550
-  f_bulletDamage: 55
+  f_effectiveRange: 50
+  f_bulletDamage: 20

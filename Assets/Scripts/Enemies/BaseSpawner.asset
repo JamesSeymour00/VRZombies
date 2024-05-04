@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a376cfc3d3241e4ca9a332a873334b5, type: 3}
   m_Name: BaseSpawner
   m_EditorClassIdentifier: 
-  i_enemyCount: 10
+  i_enemyCount: 20
   f_spawnRate: 0.75
   go_enemyPrefab:
   - {fileID: 5069445105611592741, guid: 9e71cc97e8b379d48b162e4ba0e72f49, type: 3}
