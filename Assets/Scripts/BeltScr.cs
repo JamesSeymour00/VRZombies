@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class BeltScr : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] Vector3 BeltOffset;
+	private Transform t_cameraPos;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		t_cameraPos = GameObject.FindGameObjectWithTag("MainCamera").transform;
+	}
+
+	private void Update()
+	{
+		this.transform.position = t_cameraPos.position + BeltOffset;
+		this.transform.rotation = t_cameraPos.rotation;
+	}
 }
