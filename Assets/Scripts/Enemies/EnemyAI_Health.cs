@@ -17,14 +17,14 @@ public class EnemyAI_Health : MonoBehaviour
 
 	public void TakeDamage(float dmg)
 	{
-		if (f_enemyHealth > 0)
+		if (f_enemyHealth <= 0)
+		{
+			EnemyDie();
+		}
+		else if (f_enemyHealth > 0)
 		{
 			f_enemyHealth -= dmg;
 			UpdateUI();
-		}
-		else if (f_enemyHealth <= 0)
-		{
-			EnemyDie();
 		}
 	}
 

@@ -12,6 +12,7 @@ TagManager:
   - Hand
   - Enemy
   - Spawner
+  - AmmoPouch
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Ground
   - Enemy
   - Walls
-  - 
+  - Ammo
   - 
   - 
   - 

@@ -23,7 +23,6 @@ public class XRExclusiveSocket : XRSocketInteractor
 		if (!base.CanSelect(interactable)) return false;
 
 		if (interactable.transform.tag == _acceptedTag) return true;
-
 		return false;
 	}
 }
