@@ -15,6 +15,8 @@ public class XRInfiniteInteractable : MonoBehaviour
 	{
 		m_Socket = GetComponent<XRBaseInteractor>();
 		Assert.IsNotNull(m_InteractablePrefab);
+
+		PlaceMag();
 	}
 
 	private void OnEnable()
@@ -28,6 +30,11 @@ public class XRInfiniteInteractable : MonoBehaviour
 	}
 
 	void OnSelectExited(SelectExitEventArgs selectExitEventArgs)
+	{
+		PlaceMag();
+	}
+
+	void PlaceMag()
 	{
 		Transform socketTransform = m_Socket.transform;
 		XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);

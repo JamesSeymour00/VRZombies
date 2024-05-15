@@ -11,10 +11,12 @@ public class MagazineScr : MonoBehaviour
 	[SerializeField] TextMeshProUGUI t_ammoText;
 	
 	public int i_AmmoCount;
+	public bool b_exitPouch;
 
 	private void OnEnable()
 	{
 		i_AmmoCount = scr_MagData.i_AmmoCount;
+		b_exitPouch = false;
 
 		UpdateMagUI();
 

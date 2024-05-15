@@ -1,44 +1,44 @@
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class AmmoPouchScr : MonoBehaviour
+public class AmmoPouchScr : XRSocketInteractor
 {
-	[SerializeField] LayerMask lm_AcceptedLayer;
-	[SerializeField] GameObject Spawner;
 	public int i_magCount;
-	private GameObject go_TargetAmmo;
 
-	private void OnTriggerEnter(Collider other)
+	protected override void OnSelectEntered(SelectEnterEventArgs args)
 	{
-		if (other.tag == "Ammo" && !go_TargetAmmo)
+		base.OnSelectEntered(args);
+
+		Transform selectedObjectTransform = args.interactableObject.transform;
+
+		if (selectedObjectTransform.CompareTag("Ammo"))
 		{
-			go_TargetAmmo = other.gameObject;
+			Debug.Log("Ammo placed on the socket!");
+			i_magCount++;
+			Destroy(selectedObjectTransform.gameObject);
 		}
 	}
 
-	private void OnTriggerExit(Collider other)
+	protected override void OnHoverExited(HoverExitEventArgs args)
 	{
-		if (other.tag == "Ammo" && go_TargetAmmo)
+		base.OnHoverExited(args);
+
+		Transform hoveredObjectTransform = args.interactableObject.transform;
+
+		bool HasExited = hoveredObjectTransform.GetComponent<MagazineScr>().b_exitPouch;
+
+		if (!HasExited)
 		{
-			go_TargetAmmo = null;
-		}
-	}
+			// REDUCE THE AMOUNT OF AMMO
+			i_magCount--;
+			if (i_magCount < 0)
+				i_magCount = 0;
 
-	public void StoreAmmo()
-	{
-		Destroy(go_TargetAmmo);
-		Spawner.gameObject.SetActive(true);
-		go_TargetAmmo = null;
-		i_magCount++;
-	}
+			// DESTROY THE OBJECT IF THE PLAYER DOESNT HAVE AMMO
+			if (hoveredObjectTransform.CompareTag("Ammo") && i_magCount <= 0)
+				Destroy(hoveredObjectTransform.gameObject);
+		}	
 
-	//public void ReduceMagCount()
-	//{
-	//	if (i_magCount <= 0) 
-	//	{
-	//		Spawner.gameObject.SetActive(false);
-	//		i_magCount--;
-	//	} 
-	//}
+		hoveredObjectTransform.GetComponent<MagazineScr>().b_exitPouch = true;
+	}
 }

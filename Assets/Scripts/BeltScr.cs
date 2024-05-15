@@ -15,6 +15,7 @@ public class BeltScr : MonoBehaviour
 	private void Update()
 	{
 		this.transform.position = t_cameraPos.transform.position + BeltOffset;
-		this.transform.rotation = Quaternion.Euler(this.transform.rotation.x, t_cameraPos.rotation.y, this.transform.rotation.z);
+		this.transform.rotation = t_cameraPos.transform.rotation;
+		//this.transform.rotation = Quaternion.Euler(this.transform.rotation.x, t_cameraPos.rotation.y, this.transform.rotation.z);
 	}
 }

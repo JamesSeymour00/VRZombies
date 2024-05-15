@@ -558,6 +558,7 @@ MonoBehaviour:
   img_filler: {fileID: 4400490434128769062}
   t_ammoText: {fileID: 155002704688325187}
   i_AmmoCount: 0
+  b_exitPouch: 0
 --- !u!1 &6662316061161245530
 GameObject:
   m_ObjectHideFlags: 0
