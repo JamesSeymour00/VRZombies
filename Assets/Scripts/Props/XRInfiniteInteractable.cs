@@ -7,6 +7,8 @@ public class XRInfiniteInteractable : MonoBehaviour
 	[SerializeField]
 	XRBaseInteractable m_InteractablePrefab;
 
+	public bool b_canPlaceMag = true;
+
 	XRBaseInteractor m_Socket;
 
 	private void Awake()
@@ -14,8 +16,11 @@ public class XRInfiniteInteractable : MonoBehaviour
 		m_Socket = GetComponent<XRBaseInteractor>();
 		Assert.IsNotNull(m_InteractablePrefab);
 
-		PlaceMag();
-	}
+        Transform socketTransform = m_Socket.transform;
+        XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);
+
+        m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);	
+    }
 
 	private void OnEnable()
 	{
@@ -29,20 +34,25 @@ public class XRInfiniteInteractable : MonoBehaviour
 
 	void OnSelectExited(SelectExitEventArgs selectExitEventArgs)
 	{
-		PlaceMag();
-	}
+        PlaceMag();
+    }
 
-	public void PlaceMag()
+	private void PlaceMag()
 	{
-		Transform socketTransform = m_Socket.transform;
-		XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);
+        if (b_canPlaceMag)
+        {
+            Debug.Log("PlaceMag");
 
-        m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);
+            Transform socketTransform = m_Socket.transform;
+            XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);
 
-        if (interactable.GetComponent<MagazineScr>())
-		{
-			interactable.GetComponent<MagazineScr>().b_exitPouch = false;
-		}
-		else return;
-	}
+            m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);
+
+            if (interactable.GetComponent<MagazineScr>())
+            {
+                interactable.GetComponent<MagazineScr>().b_exitPouch = false;
+            }
+            else return;
+        }       
+    }
 }

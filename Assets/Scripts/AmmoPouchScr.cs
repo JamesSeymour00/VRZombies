@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class AmmoPouchScr : XRSocketInteractor
 {
 	public int i_magCount;
+    public XRInfiniteInteractable AmmoSpawnerScr;
 
 	[SerializeField] string _acceptedTag;
 
@@ -26,17 +27,25 @@ public class AmmoPouchScr : XRSocketInteractor
 		return false;
 	}
 
+	private void Update()
+	{
+		if (i_magCount == 0)
+		{
+            AmmoSpawnerScr.b_canPlaceMag = false;
+
+        }
+        else AmmoSpawnerScr.b_canPlaceMag = true;
+    }
+
 	protected override void OnSelectEntered(SelectEnterEventArgs args)
 	{
         base.OnSelectEntered(args);
 
-        GameObject EnteredItem = args.interactableObject.transform.gameObject;
-
-        if (EnteredItem.GetComponent<MagazineScr>().b_exitPouch == true && EnteredItem.CompareTag("Ammo"))
+        if (args.interactableObject.transform.CompareTag("Ammo") && args.interactableObject.transform.gameObject.GetComponent<MagazineScr>().b_exitPouch)
 		{
             Debug.Log("Ammo placed on the socket!");
             i_magCount++;
-            Destroy(EnteredItem);
+            Destroy(args.interactableObject.transform.gameObject);
         }       
     }
 
@@ -44,25 +53,13 @@ public class AmmoPouchScr : XRSocketInteractor
 	{
 		base.OnHoverExited(args);
 
-        if (args.interactableObject.transform.GetComponent<MagazineScr>().b_exitPouch == false)
+        if (args.interactableObject.transform.CompareTag("Ammo") && !args.interactableObject.transform.gameObject.GetComponent<MagazineScr>().b_exitPouch)
 		{
-            Transform hoveredObjectTransform = args.interactableObject.transform;
-
-            bool HasExited = hoveredObjectTransform.GetComponent<MagazineScr>().b_exitPouch;
-
-            if (!HasExited)
-            {
-                // REDUCE THE AMOUNT OF AMMO
-                i_magCount--;
-                if (i_magCount < 0)
-                    i_magCount = 0;
-
-                // DESTROY THE OBJECT IF THE PLAYER DOESNT HAVE AMMO
-                if (hoveredObjectTransform.CompareTag("Ammo") && i_magCount <= 0)
-                    Destroy(hoveredObjectTransform.gameObject);
-            }
-
-            hoveredObjectTransform.GetComponent<MagazineScr>().b_exitPouch = true;
-        }
+            args.interactableObject.transform.gameObject.GetComponent<MagazineScr>().b_exitPouch = true;
+            i_magCount--;
+            Debug.Log("Ammo removed on the socket!");
+            if (i_magCount < 0)
+                i_magCount = 0;
+        }  
     }        
 }

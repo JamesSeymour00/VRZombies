@@ -11179,6 +11179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractablePrefab: {fileID: 6791116422039865483, guid: f5d14cdb2483d6b47800318c5849d1d5, type: 3}
+  b_canPlaceMag: 0
 --- !u!1 &1367200020
 GameObject:
   m_ObjectHideFlags: 0
@@ -66700,6 +66701,7 @@ MonoBehaviour:
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
   i_magCount: 3
+  AmmoSpawnerScr: {fileID: 1342808259}
   _acceptedTag: Ammo
 --- !u!1001 &6672328825676024803
 PrefabInstance:
