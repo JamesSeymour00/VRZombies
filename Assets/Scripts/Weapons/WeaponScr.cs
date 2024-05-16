@@ -32,7 +32,7 @@ public class WeaponScr : MonoBehaviour
 	#region SHOOT
 	public void Shoot()
 	{
-		if (b_magAttached)
+		if (b_magAttached && b_isHeld)
 		{
 			if (scr_mag.i_AmmoCount > 0)
 			{

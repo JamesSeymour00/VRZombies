@@ -2717,44 +2717,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &420644254 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2170765043566423045, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-  m_PrefabInstance: {fileID: 6672328825676024803}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &420644256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420644254}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.8, z: 0.57}
-  m_Center: {x: -0.27, y: 1.12, z: 0}
---- !u!114 &420644257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420644254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &452463679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10169,7 +10131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127529356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15}
+  m_LocalPosition: {x: 0, y: 0, z: -0.175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66785,84 +66747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunRack
       objectReference: {fileID: 0}
-    - target: {fileID: 2935301034906728995, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 2935301034906728995, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 2935301034906728995, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Give_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 2935301034906728995, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hold_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898630637495995475, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 3898630637495995475, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 3898630637495995475, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Give_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898630637495995475, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hold_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470992891747034457, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 5470992891747034457, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 5470992891747034457, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Give_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470992891747034457, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hold_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441347887956110812, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 7441347887956110812, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 420644257}
-    - target: {fileID: 7441347887956110812, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Give_Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441347887956110812, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hold_Weapon
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8353333373060780629, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-    - {fileID: 1536154557325496550, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-    - {fileID: 8511452209001653880, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-    - {fileID: 4920448829463968420, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2170765043566423045, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 420644257}
-    - targetCorrespondingSourceObject: {fileID: 2170765043566423045, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 420644256}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
 --- !u!1 &6940033294318078771
 GameObject:

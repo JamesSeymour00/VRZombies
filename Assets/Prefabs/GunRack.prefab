@@ -440,6 +440,72 @@ MonoBehaviour:
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
   _acceptedTag: Ammo
+--- !u!1 &1042962379667359394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7367573931948214926}
+  - component: {fileID: 8811410052576849279}
+  - component: {fileID: 1982243606266107402}
+  m_Layer: 3
+  m_Name: AttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7367573931948214926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042962379667359394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6224476271041155464}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8811410052576849279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042962379667359394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1982243606266107402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042962379667359394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.5, z: 0.23}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1905636584091575316
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1184522247934931151}
+  - component: {fileID: 4461191306485266121}
   m_Layer: 3
   m_Name: GunRack
   m_TagString: Untagged
@@ -604,6 +671,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4461191306485266121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170765043566423045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.8, z: 0.57}
+  m_Center: {x: -0.27, y: 1.12, z: 0}
 --- !u!1 &2295947752415279662
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +802,138 @@ MonoBehaviour:
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
   _acceptedTag: Ammo
+--- !u!1 &2700369795456644445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6401379794191516469}
+  - component: {fileID: 2997091232034053930}
+  - component: {fileID: 5676638882255988154}
+  m_Layer: 3
+  m_Name: AttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6401379794191516469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700369795456644445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7403415101736455405}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2997091232034053930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700369795456644445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5676638882255988154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700369795456644445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.5, z: 0.23}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2917523099243888487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7428728604832053282}
+  - component: {fileID: 6309506111840372080}
+  - component: {fileID: 1077107323732333491}
+  m_Layer: 3
+  m_Name: AttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7428728604832053282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917523099243888487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8474102657708134730}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6309506111840372080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917523099243888487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1077107323732333491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917523099243888487}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.5, z: 0.23}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3069775355137194532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1494,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2199742650058984478}
   - component: {fileID: 4912094901904220417}
-  - component: {fileID: 1536154557325496550}
   - component: {fileID: 5470992891747034457}
   m_Layer: 3
   m_Name: Gun_Sockets
@@ -1294,7 +1513,8 @@ Transform:
   m_LocalPosition: {x: -0.3833, y: 1.377, z: -0.03639984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6115161526991978017}
   m_Father: {fileID: 1184522247934931151}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
@@ -1319,18 +1539,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1536154557325496550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3673813524146115566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5470992891747034457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,7 +1557,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 6115161526991978017}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -1363,7 +1571,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 5773896428769794502}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Hold_Weapon
         m_Mode: 1
@@ -1378,7 +1586,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 5773896428769794502}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Give_Weapon
         m_Mode: 1
@@ -1531,7 +1739,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7403415101736455405}
   - component: {fileID: 4741690223855382239}
-  - component: {fileID: 4920448829463968420}
   - component: {fileID: 2935301034906728995}
   m_Layer: 3
   m_Name: Gun_Sockets
@@ -1551,7 +1758,8 @@ Transform:
   m_LocalPosition: {x: 0.07800001, y: 1.377, z: -0.03639984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6401379794191516469}
   m_Father: {fileID: 1184522247934931151}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
@@ -1576,18 +1784,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4920448829463968420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4889705774882312244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2935301034906728995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,7 +1802,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 6401379794191516469}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -1620,7 +1816,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 2997091232034053930}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Hold_Weapon
         m_Mode: 1
@@ -1635,7 +1831,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 2997091232034053930}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Give_Weapon
         m_Mode: 1
@@ -1788,7 +1984,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8474102657708134730}
   - component: {fileID: 2777055125479023740}
-  - component: {fileID: 8511452209001653880}
   - component: {fileID: 3898630637495995475}
   m_Layer: 3
   m_Name: Gun_Sockets
@@ -1808,7 +2003,8 @@ Transform:
   m_LocalPosition: {x: -0.1512, y: 1.377, z: -0.03639984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7428728604832053282}
   m_Father: {fileID: 1184522247934931151}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
@@ -1833,18 +2029,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8511452209001653880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5019746786364445072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3898630637495995475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,7 +2047,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 7428728604832053282}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -1877,7 +2061,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 6309506111840372080}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Hold_Weapon
         m_Mode: 1
@@ -1892,7 +2076,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 6309506111840372080}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Give_Weapon
         m_Mode: 1
@@ -1936,6 +2120,7 @@ GameObject:
   - component: {fileID: 7235203827442948316}
   - component: {fileID: 7061558396455699444}
   - component: {fileID: 4275543269434557071}
+  - component: {fileID: 8531862561770533898}
   m_Layer: 3
   m_Name: Mesh
   m_TagString: Untagged
@@ -2008,6 +2193,94 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8531862561770533898
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211026688942309148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5473818344520476622, guid: f60d5941ff2dbb945a3dc3bf15f71fda, type: 3}
+--- !u!1 &5862620211358675995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6115161526991978017}
+  - component: {fileID: 5773896428769794502}
+  - component: {fileID: 6449923675297794703}
+  m_Layer: 3
+  m_Name: AttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6115161526991978017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5862620211358675995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2199742650058984478}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5773896428769794502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5862620211358675995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6449923675297794703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5862620211358675995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.5, z: 0.23}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5873289362372019611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,7 +2731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6224476271041155464}
   - component: {fileID: 1374279985859493227}
-  - component: {fileID: 8353333373060780629}
   - component: {fileID: 7441347887956110812}
   m_Layer: 3
   m_Name: Gun_Sockets
@@ -2478,7 +2750,8 @@ Transform:
   m_LocalPosition: {x: -0.6049, y: 1.377, z: -0.03639984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7367573931948214926}
   m_Father: {fileID: 1184522247934931151}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
@@ -2503,18 +2776,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8353333373060780629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8119830610846444792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d396bfec28e5b48917831950705de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7441347887956110812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,7 +2794,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 7367573931948214926}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -2547,7 +2808,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 8811410052576849279}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Hold_Weapon
         m_Mode: 1
@@ -2562,7 +2823,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8353333373060780629}
+      - m_Target: {fileID: 8811410052576849279}
         m_TargetAssemblyTypeName: StandScr, Assembly-CSharp
         m_MethodName: Give_Weapon
         m_Mode: 1
