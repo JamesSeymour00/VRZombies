@@ -96,7 +96,7 @@ public class WeaponScr : MonoBehaviour
 	#region WEAPON HOLDING/RELEASING
 	public void HoldWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true)
+		if (Physics.Raycast(transform.position, transform.forward * -1, 15f, l_IgnoreHoldItem) != true)
 		{
 			i_grabs++;
 			b_isHeld = true;
@@ -104,7 +104,7 @@ public class WeaponScr : MonoBehaviour
 	}
 	public void ReleaseWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 10f, l_IgnoreHoldItem) != true && i_grabs == 1)
+		if (Physics.Raycast(transform.position, transform.forward * -1, 15f, l_IgnoreHoldItem) != true && i_grabs == 1)
 		{
 			i_grabs--;
 			b_isHeld = false;

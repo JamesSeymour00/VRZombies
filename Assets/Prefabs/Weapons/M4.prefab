@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 1735966914911527743}
   - component: {fileID: 3203996903563725738}
   - component: {fileID: 7942927724318330226}
+  - component: {fileID: -4581807821275901278}
   m_Layer: 0
   m_Name: M4
   m_TagString: Weapon
@@ -480,6 +481,18 @@ MonoBehaviour:
   f_fireRate: 0
   scr_mag: {fileID: 0}
   b_isHeld: 0
+--- !u!114 &-4581807821275901278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294789715406795851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa77e295f7f89a408ea52a77280592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2436966648613347774
 GameObject:
   m_ObjectHideFlags: 0
