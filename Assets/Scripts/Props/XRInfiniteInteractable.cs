@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -34,11 +32,17 @@ public class XRInfiniteInteractable : MonoBehaviour
 		PlaceMag();
 	}
 
-	void PlaceMag()
+	public void PlaceMag()
 	{
 		Transform socketTransform = m_Socket.transform;
 		XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);
 
-		m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);
+        m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);
+
+        if (interactable.GetComponent<MagazineScr>())
+		{
+			interactable.GetComponent<MagazineScr>().b_exitPouch = false;
+		}
+		else return;
 	}
 }
