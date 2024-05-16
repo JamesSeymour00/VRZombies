@@ -18,6 +18,8 @@ public class IgnoreCollisionsWithSocket : MonoBehaviour
 		_socket = GetComponent<XRExclusiveSocket>();
 		Assert.IsNotNull(_socket);
 
+		_ourCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>();
+
 		_socket.selectEntered.AddListener(OnSelectEntered);
 		_socket.selectExited.AddListener(OnSelectExited);
 	}

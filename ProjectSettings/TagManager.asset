@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - Spawner
   - AmmoPouch
+  - MagSlot
   layers:
   - Default
   - TransparentFX
