@@ -21,6 +21,7 @@ public class EnemyAI_Health : MonoBehaviour
 	{
 		if (f_enemyHealth <= 0)
 		{
+			f_enemyHealth = 0;
 			UpdateUI();
 			EnemyDie();
 		}

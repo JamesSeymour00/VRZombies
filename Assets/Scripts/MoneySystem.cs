@@ -15,13 +15,13 @@ public class MoneySystem : MonoBehaviour
 
 	public void AddMoney(float add)
 	{
-		f_currentMoney =+ add;
+		f_currentMoney += add;
 		UpdateUI();
 	}
 
 	public void SpendMoney(float remove)
 	{
-		f_currentMoney =- remove;
+		f_currentMoney -= remove;
 		UpdateUI();
 	}
 
