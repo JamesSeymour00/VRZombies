@@ -7,4 +7,6 @@ public class EnemyAI_Data : ScriptableObject
 	public float f_enemyHealth;
 	public float f_enemyDamage;
 	public float f_perceptionRadius;
+	public float f_moneyPerShot;
+	public float f_moneyPerDeath;
 }

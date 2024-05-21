@@ -16,3 +16,5 @@ MonoBehaviour:
   f_enemyHealth: 100
   f_enemyDamage: 15
   f_perceptionRadius: 15
+  f_moneyPerShot: 10
+  f_moneyPerDeath: 50

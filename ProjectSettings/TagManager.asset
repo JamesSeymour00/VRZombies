@@ -15,6 +15,7 @@ TagManager:
   - AmmoPouch
   - MagSlot
   - Door
+  - GameManager
   layers:
   - Default
   - TransparentFX
