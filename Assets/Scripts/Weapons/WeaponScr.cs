@@ -100,6 +100,12 @@ public class WeaponScr : MonoBehaviour
 		{
 			i_grabs++;
 			b_isHeld = true;
+			Debug.Log("Holding Flip");
+		}
+		if (Physics.Raycast(transform.position, transform.forward * 1, 15f, l_IgnoreHoldItem) == true)
+		{
+			i_grabs = 0;
+			b_isHeld = false;
 		}
 	}
 	public void ReleaseWeapon()
@@ -108,11 +114,13 @@ public class WeaponScr : MonoBehaviour
 		{
 			i_grabs--;
 			b_isHeld = false;
+			Debug.Log("Releasing");
 		}
 		else
 		{
 			i_grabs = 1;
 			b_isHeld = true;
+			Debug.Log("Holding Flip");
 		}
 	}
 	#endregion
