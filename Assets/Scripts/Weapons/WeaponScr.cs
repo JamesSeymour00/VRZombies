@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class WeaponScr : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class WeaponScr : MonoBehaviour
 	[HideInInspector] public float f_fireRate;
 	private AudioSource as_source;
 	public MagazineScr scr_mag;
-	private int i_grabs;
+	public int i_grabs;
 	private bool b_magAttached;
 	private GameObject ShootingTarget;
 	public bool b_isHeld;
@@ -20,7 +21,7 @@ public class WeaponScr : MonoBehaviour
 	private void Update()
 	{
 		Debug.DrawRay(t_gunTip.position, t_gunTip.forward, Color.blue);
-		Debug.DrawRay(transform.position, transform.forward * -1, Color.red);
+		Debug.DrawRay(transform.position, transform.forward * -1.5f, Color.red);
 	}
 
 	private void OnEnable()
@@ -94,33 +95,50 @@ public class WeaponScr : MonoBehaviour
 	#endregion
 
 	#region WEAPON HOLDING/RELEASING
+
+	public void OnSelectEntered(SelectEnterEventArgs args)
+	{
+		Debug.Log(args);
+	}
+
 	public void HoldWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 15f, l_IgnoreHoldItem) != true)
-		{
-			i_grabs++;
-			b_isHeld = true;
-			Debug.Log("Holding Flip");
-		}
-		if (Physics.Raycast(transform.position, transform.forward * 1, 15f, l_IgnoreHoldItem) == true)
+		if (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem))
 		{
 			i_grabs = 0;
 			b_isHeld = false;
 		}
+
+		else if (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) && i_grabs == 1)
+		{
+			i_grabs++;
+		}
+
+		else if (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) != true)
+		{
+			i_grabs++;
+			b_isHeld = true;
+		}
+
 	}
+
 	public void ReleaseWeapon()
 	{
-		if (Physics.Raycast(transform.position, transform.forward * -1, 15f, l_IgnoreHoldItem) != true && i_grabs == 1)
-		{
-			i_grabs--;
-			b_isHeld = false;
-			Debug.Log("Releasing");
-		}
-		else
+		if (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem))
 		{
 			i_grabs = 1;
 			b_isHeld = true;
-			Debug.Log("Holding Flip");
+		}
+
+		else if (i_grabs == 1 && (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) != true))
+		{
+			i_grabs = 0;
+			b_isHeld = false;
+		}
+		else if (i_grabs == 2 && (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) != true))
+		{
+			i_grabs = 1;
+			b_isHeld = true;
 		}
 	}
 	#endregion

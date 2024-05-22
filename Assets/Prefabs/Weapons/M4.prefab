@@ -480,6 +480,7 @@ MonoBehaviour:
   f_weaponVolume: 0.75
   f_fireRate: 0
   scr_mag: {fileID: 0}
+  i_grabs: 0
   b_isHeld: 0
 --- !u!114 &-4581807821275901278
 MonoBehaviour:

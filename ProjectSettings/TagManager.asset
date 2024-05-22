@@ -21,6 +21,7 @@ TagManager:
   - P250Mag
   - P250
   - M4
+  - GunRack
   layers:
   - Default
   - TransparentFX
