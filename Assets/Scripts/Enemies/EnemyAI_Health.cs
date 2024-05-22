@@ -8,6 +8,7 @@ public class EnemyAI_Health : MonoBehaviour
 	[SerializeField] EnemyAI_Data so_enemyData;
 	[SerializeField] Image i_enemyUI;
 	private MoneySystem scr_GM_moneySystem;
+	private NewEnemySpawner scr_enemySpawner;
 
 	public float f_enemyHealth;
 
@@ -15,6 +16,7 @@ public class EnemyAI_Health : MonoBehaviour
 	{
 		f_enemyHealth = so_enemyData.f_enemyHealth;
 		scr_GM_moneySystem = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MoneySystem>();
+		scr_enemySpawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<NewEnemySpawner>();
 	}
 
 	public void TakeDamage(float dmg)
@@ -41,6 +43,7 @@ public class EnemyAI_Health : MonoBehaviour
 	void EnemyDie()
 	{
 		scr_GM_moneySystem.AddMoney(so_enemyData.f_moneyPerDeath);
+		scr_enemySpawner.i_enemiesToKill--;
 		Destroy(gameObject);
 	}
 }

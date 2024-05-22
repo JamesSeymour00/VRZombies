@@ -6,19 +6,36 @@ public class NewEnemySpawner : MonoBehaviour
 	[SerializeField] EnemySpawnerDataSO so_enemySpawnerData;
 	[SerializeField] Transform[] t_spawnPoints;
  
-	private int i_enemiesToSpawn;
+	public int i_enemiesToSpawn;
+	public int i_enemiesToKill;
+	public bool b_roundEnd;
 
 	private Coroutine Spawn_CR;
 
+	private void Start()
+	{
+		b_roundEnd = true;
+		i_enemiesToSpawn = so_enemySpawnerData.i_enemyCount;
+		i_enemiesToKill = i_enemiesToSpawn;
+	}
+
 	public void ActivateRound()
 	{
-		i_enemiesToSpawn = so_enemySpawnerData.i_enemyCount;
 		if (Spawn_CR == null)
 			Spawn_CR = StartCoroutine(CR_SpawnEnemies());
 	}
 
+	private void Update()
+	{
+		if (i_enemiesToKill <= 0)
+		{
+			b_roundEnd = true;
+		}
+	}
+
 	IEnumerator CR_SpawnEnemies()
 	{
+		b_roundEnd = false;
 		while (i_enemiesToSpawn > 0)
 		{
 			i_enemiesToSpawn--;

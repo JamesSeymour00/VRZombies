@@ -22,6 +22,8 @@ TagManager:
   - P250
   - M4
   - GunRack
+  - SafeDoor
+  - Button
   layers:
   - Default
   - TransparentFX
