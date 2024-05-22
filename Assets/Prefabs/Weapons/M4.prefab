@@ -49,9 +49,9 @@ GameObject:
   - component: {fileID: 3203996903563725738}
   - component: {fileID: 7942927724318330226}
   - component: {fileID: -4581807821275901278}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: M4
-  m_TagString: Weapon
+  m_TagString: M4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -599,14 +599,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3333325729307150397}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalRotation: {x: 0, y: 0.42261827, z: 0.9063079, w: 0}
   m_LocalPosition: {x: -0.00004196431, y: -0.01236, z: -0.0035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9089843246373204203}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -130, y: 180, z: 0}
 --- !u!1 &3593999332324055783
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  _acceptedTag: Ammo
+  _acceptedTag: M4Mag
 --- !u!1 &4771335982446534450
 GameObject:
   m_ObjectHideFlags: 0

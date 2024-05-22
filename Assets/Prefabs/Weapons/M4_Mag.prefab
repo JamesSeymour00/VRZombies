@@ -229,9 +229,9 @@ GameObject:
   - component: {fileID: 128037660158348835}
   - component: {fileID: 249398682397342044}
   - component: {fileID: 863761307650596619}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: M4_Mag
-  m_TagString: Ammo
+  m_TagString: M4Mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,6 +16,11 @@ TagManager:
   - MagSlot
   - Door
   - GameManager
+  - Undefined
+  - M4Mag
+  - P250Mag
+  - P250
+  - M4
   layers:
   - Default
   - TransparentFX
@@ -29,10 +34,10 @@ TagManager:
   - Ammo
   - Walkable
   - NonWalk
-  - 
-  - 
-  - 
-  - 
+  - M4Mag
+  - P250Mag
+  - M4
+  - P250
   - 
   - 
   - 

@@ -7560,6 +7560,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3385890772825029785, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 61441
+      objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7604,6 +7608,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6688015753839463788, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 61441
+      objectReference: {fileID: 0}
     - target: {fileID: 7169631891049266947, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7622,7 +7630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9168142743249570444, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_MoveSpeed
-      value: 4
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26491,7 +26499,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  _acceptedTag: Weapon
+  _acceptedTag: P250
 --- !u!135 &1707157938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32636,7 +32644,8 @@ PrefabInstance:
       value: Vending Machine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3396834718431722268, guid: a86449adbf536414c993c382c24ad968, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86449adbf536414c993c382c24ad968, type: 3}
@@ -32775,6 +32784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947547809397369079, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
     - target: {fileID: 1184522247934931151, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -32819,9 +32832,93 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1258297806991696226, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
     - target: {fileID: 2170765043566423045, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
       propertyPath: m_Name
       value: GunRack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755228571041157794, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935301034906728995, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184868748559059409, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388747396367346634, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399163050306535636, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405343072646703149, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747764083686770964, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768715270382776010, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898630637495995475, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026801878604450109, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058861691432825495, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069319387165181637, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370715180309809369, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922873051991417351, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425340521080157211, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470992891747034457, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558030752724574227, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131317171361940366, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441347887956110812, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: P250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572358600395350112, guid: 9059205354b0b014ab944c7d354e7645, type: 3}
+      propertyPath: _acceptedTag
+      value: M4Mag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

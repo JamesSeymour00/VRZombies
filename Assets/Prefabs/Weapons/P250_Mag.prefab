@@ -310,9 +310,9 @@ GameObject:
   - component: {fileID: 128037660158348835}
   - component: {fileID: 249398682397342044}
   - component: {fileID: -3926980769746614996}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P250_Mag
-  m_TagString: Ammo
+  m_TagString: P250Mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
