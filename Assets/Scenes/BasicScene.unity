@@ -13038,7 +13038,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  _acceptedTag: Ammo
+  _acceptedTag: P250Mag
 --- !u!114 &829029070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13620,7 +13620,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  _acceptedTag: Ammo
+  _acceptedTag: M4Mag
 --- !u!114 &868135099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15188,7 +15188,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  _acceptedTag: Ammo
+  _acceptedTag: M4Mag
 --- !u!114 &979043113
 MonoBehaviour:
   m_ObjectHideFlags: 0
