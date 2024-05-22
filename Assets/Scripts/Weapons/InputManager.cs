@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -78,7 +79,16 @@ public class InputManager : MonoBehaviour
 
 	public void FindHeldWeapon()
 	{
-		g_PossibleWeapons = GameObject.FindGameObjectsWithTag("Weapon");
+		//g_PossibleWeapons = GameObject.FindGameObjectsWithTag("P250");
+		//g_PossibleWeapons = GameObject.FindGameObjectsWithTag("M4");
+		//g_PossibleWeapons = GameObject.FindGameObjectsWithTag("P250");
+
+		List<GameObject> possibleWeaponsList = new List<GameObject>();
+
+		possibleWeaponsList.AddRange(GameObject.FindGameObjectsWithTag("M4"));
+		possibleWeaponsList.AddRange(GameObject.FindGameObjectsWithTag("P250"));
+
+		g_PossibleWeapons = possibleWeaponsList.ToArray();
 
 		for (int i = 0; i < g_PossibleWeapons.Length; i++)
 		{

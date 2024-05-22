@@ -72,7 +72,7 @@ public class WeaponScr : MonoBehaviour
 	#region MAGAZINE
 	private void OnTriggerStay(Collider other)
 	{
-		if (other.gameObject.tag == "Ammo")
+		if (other.gameObject.tag == "M4Mag" || other.gameObject.tag == "P250Mag")
 		{
 			if (b_magAttached)
 			{
