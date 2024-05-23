@@ -26,7 +26,7 @@ public class MoneySystem : MonoBehaviour
 		UpdateUI();
 	}
 
-	private void UpdateUI()
+	public void UpdateUI()
 	{
 		t_moneyText.text = f_currentMoney.ToString();
 	}

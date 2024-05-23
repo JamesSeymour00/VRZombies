@@ -18,7 +18,10 @@ public class VendingMachine : MonoBehaviour
 		if (scr_moneySystem.f_currentMoney >= SO_PricesData.M4Mag)
 		{
 			scr_moneySystem.f_currentMoney -= SO_PricesData.M4Mag;
-			Instantiate(SO_PricesData.M4MagObj, SpawnPoint);
+			scr_moneySystem.UpdateUI();
+			GameObject Mag = Instantiate(SO_PricesData.M4MagObj, SpawnPoint);
+			Rigidbody rb = Mag.GetComponent<Rigidbody>();
+			rb.AddForce(rb.transform.forward * 5f, ForceMode.Impulse);
 		}
 	}
 
@@ -27,7 +30,10 @@ public class VendingMachine : MonoBehaviour
 		if (scr_moneySystem.f_currentMoney >= SO_PricesData.P250Mag)
 		{
 			scr_moneySystem.f_currentMoney -= SO_PricesData.P250Mag;
-			Instantiate(SO_PricesData.P250MagObj);
+			scr_moneySystem.UpdateUI();
+			GameObject Mag = Instantiate(SO_PricesData.P250MagObj, SpawnPoint);
+			Rigidbody rb = Mag.GetComponent<Rigidbody>();
+			rb.AddForce(rb.transform.forward * 5f, ForceMode.Impulse);
 		}
 	}
 }
