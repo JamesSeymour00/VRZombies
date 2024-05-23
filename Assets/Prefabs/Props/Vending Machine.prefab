@@ -7198,6 +7198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71974228475598083}
   - component: {fileID: 1897371396742987978}
+  - component: {fileID: 7014099394933397297}
   m_Layer: 0
   m_Name: Vending Machine
   m_TagString: Untagged
@@ -7247,6 +7248,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SO_PricesData: {fileID: 11400000, guid: a31624b9ebbe60941871060930626c00, type: 2}
   SpawnPoint: {fileID: 1151351350322332445}
+--- !u!65 &7014099394933397297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138549215219482871}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.1, z: 1}
+  m_Center: {x: 0, y: 1.03, z: 0}
 --- !u!1 &8191603965701471090
 GameObject:
   m_ObjectHideFlags: 0

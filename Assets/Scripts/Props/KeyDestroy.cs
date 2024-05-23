@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class KeyDestroy : MonoBehaviour
