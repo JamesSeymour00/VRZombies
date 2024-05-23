@@ -472,8 +472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t_gunTip: {fileID: 1267358433989087224}
+  t_casingPort: {fileID: 796370819098875938}
   t_sightTip: {fileID: 4089637552232668614}
-  so_weaponData: {fileID: 11400000, guid: a89e1dc727e8bdf4b942b7c8d9a25335, type: 2}
+  so_weaponData: {fileID: 11400000, guid: 711f14e867609454483c4409ffc1f003, type: 2}
   l_IgnoreHoldItem:
     serializedVersion: 2
     m_Bits: 8

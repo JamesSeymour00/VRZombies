@@ -416,6 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t_gunTip: {fileID: 1267358433989087224}
+  t_casingPort: {fileID: 796370819098875938}
   t_sightTip: {fileID: 4089637552232668614}
   so_weaponData: {fileID: 11400000, guid: 0e539b05ed4f6e54ea3865601fab8f16, type: 2}
   l_IgnoreHoldItem:
@@ -1297,7 +1298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7774285539880019967}
   m_LocalRotation: {x: 0.7069834, y: -0, z: -0, w: 0.7072302}
-  m_LocalPosition: {x: 0.00025, y: 0.00134, z: 0.00798}
+  m_LocalPosition: {x: -0.00216, y: 0.00134, z: 0.01452}
   m_LocalScale: {x: 0.14171584, y: 0.14171584, z: 0.14171584}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class WeaponScr : MonoBehaviour
 {
 	[SerializeField] Transform t_gunTip;
+	[SerializeField] Transform t_casingPort;
 	[SerializeField] Transform t_sightTip;
 	[SerializeField] WeaponDataSO so_weaponData;
 	[SerializeField] LayerMask l_IgnoreHoldItem;
@@ -41,18 +42,19 @@ public class WeaponScr : MonoBehaviour
 				scr_mag.i_AmmoCount--;
 				scr_mag.UpdateMagUI();
 
+				GameObject Casing = Instantiate(so_weaponData.go_bulletCasing, t_casingPort.position, t_casingPort.rotation);
+				Casing.GetComponent<Rigidbody>().useGravity = false;
+				Casing.GetComponent<Rigidbody>().AddForce((t_casingPort.right * -1) * so_weaponData.f_casingSpeed, ForceMode.Impulse);
+				Casing.GetComponent<Rigidbody>().AddTorque(Vector3.up * so_weaponData.f_spinForce, ForceMode.Impulse);
+				Casing.GetComponent<Rigidbody>().useGravity = true;
+
 				if (Physics.Raycast(t_sightTip.position, t_sightTip.forward, out RaycastHit hitInfo))
 				{
 					ShootingTarget = hitInfo.collider.gameObject;
-
 					Raycast();
 				}
 				else
 					return;
-				
-
-				//GameObject Bullet = Instantiate(so_weaponData.go_bulletPrefab, t_gunTip.position, t_gunTip.rotation);
-				//Bullet.GetComponent<Rigidbody>().AddForce(t_gunTip.forward * so_weaponData.f_bulletSpeed, ForceMode.Impulse);
 			}
 		}
 	}
@@ -119,7 +121,6 @@ public class WeaponScr : MonoBehaviour
 			i_grabs++;
 			b_isHeld = true;
 		}
-
 	}
 
 	public void ReleaseWeapon()
@@ -129,13 +130,23 @@ public class WeaponScr : MonoBehaviour
 			i_grabs = 1;
 			b_isHeld = true;
 		}
-
-		else if (i_grabs == 1 && (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) != true))
+		else if (i_grabs == 1 && Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem))
 		{
 			i_grabs = 0;
 			b_isHeld = false;
 		}
-		else if (i_grabs == 2 && (Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem) != true))
+		else if (i_grabs == 2 && Physics.Raycast(transform.position, transform.forward * -1, 1.5f, l_IgnoreHoldItem))
+		{
+			i_grabs = 1;
+			b_isHeld = true;
+		}
+
+		else if (i_grabs == 1)
+		{
+			i_grabs = 0;
+			b_isHeld = false;
+		}
+		else if (i_grabs == 2)
 		{
 			i_grabs = 1;
 			b_isHeld = true;
