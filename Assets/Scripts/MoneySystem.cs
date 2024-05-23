@@ -5,12 +5,13 @@ using TMPro;
 public class MoneySystem : MonoBehaviour
 {
 	[SerializeField] TextMeshProUGUI t_moneyText;
-	private float f_currentMoney;
-	private float f_startingMoney;
+	public float f_currentMoney;
+	private float f_startingMoney = 500;
 
 	private void Start()
 	{
 		f_currentMoney = f_startingMoney;
+		UpdateUI();
 	}
 
 	public void AddMoney(float add)

@@ -17482,6 +17482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t_moneyText: {fileID: 2084123572}
+  f_currentMoney: 0
 --- !u!114 &1087965799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33932,73 +33933,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 337240968881294496, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: img_filler
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 337240968881294496, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: t_ammoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535148851569190343, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: img_filler
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535148851569190343, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: t_ammoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788085991731531973, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: img_filler
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788085991731531973, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: t_ammoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798851259697657936, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: img_filler
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798851259697657936, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: t_ammoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4315077194083649461, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: img_filler
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4315077194083649461, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: t_ammoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478129545665625463, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7397960051698349666, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627147800873459986, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633836354164394375, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7802400071048565776, guid: a86449adbf536414c993c382c24ad968, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8138549215219482871, guid: a86449adbf536414c993c382c24ad968, type: 3}
       propertyPath: m_Name
       value: Vending Machine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3396834718431722268, guid: a86449adbf536414c993c382c24ad968, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86449adbf536414c993c382c24ad968, type: 3}
