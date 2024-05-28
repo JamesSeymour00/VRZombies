@@ -47,12 +47,6 @@ public class XRInfiniteInteractable : MonoBehaviour
             XRBaseInteractable interactable = Instantiate(m_InteractablePrefab, socketTransform.position, socketTransform.rotation);
 
             m_Socket.interactionManager.SelectEnter((IXRSelectInteractor)m_Socket, interactable);
-
-            if (interactable.GetComponent<MagazineScr>())
-            {
-                interactable.GetComponent<MagazineScr>().b_exitPouch = false;
-            }
-            else return;
         }       
     }
 }
