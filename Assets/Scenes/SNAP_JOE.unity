@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6387b6f2cd52f9b4480a8c5fca851aa1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18306622, g: 0.2287434, b: 0.30669293, a: 1}
+  m_IndirectSpecularColor: {r: 0.10400419, g: 0.10615387, b: 0.13089672, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 3a80596ff03602a438a8a913c03aaec6, type: 2}
   m_LightingSettings: {fileID: 1122098188}
 --- !u!196 &4
 NavMeshSettings:
@@ -594,6 +594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -920,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1852,6 +1860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1912,6 +1924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2330,6 +2346,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2922,6 +2942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3073,6 +3097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3211,11 +3239,133 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+--- !u!1 &160994054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160994057}
+  - component: {fileID: 160994056}
+  - component: {fileID: 160994055}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &160994055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160994054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &160994056
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160994054}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 3
+  m_Shape: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 10
+  m_Range: 7
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &160994057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160994054}
+  m_LocalRotation: {x: 0.7071067, y: -0, z: -0, w: 0.7071069}
+  m_LocalPosition: {x: 13.844, y: 6.699, z: 99.576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 146
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &162319650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3271,6 +3421,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
       propertyPath: m_Name
       value: SM_Pillar_Blockout (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3604,6 +3758,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3572239542307765844, guid: 10ec380cca6f10e43ab8c40ac8036823, type: 3}
   m_PrefabInstance: {fileID: 179334595}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &181053156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_RootOrder
+      value: 148
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.011
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.2759995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 96.08902
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4999987
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999872
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000013
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000014
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_Name
+      value: SM_Wall_Large_Blockout (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
 --- !u!1001 &187878078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3792,6 +4011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3863,6 +4086,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3833940838084410364, guid: b33dcb5919b79164fa3a8f5aa1b15e6d, type: 3}
   m_PrefabInstance: {fileID: 194188358}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &198086372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_RootOrder
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.011
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 96.089
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4999987
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999872
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000013
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000014
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_Name
+      value: SM_Wall_Large_Blockout (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
 --- !u!1001 &205100717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4435,6 +4723,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4621841316787632372, guid: 00815f6a113de81498742c36021fea53, type: 3}
   m_PrefabInstance: {fileID: 222451278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &222942290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222942292}
+  - component: {fileID: 222942291}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &222942291
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222942290}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 30, y: 20, z: 35}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &222942292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222942290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.61, y: 3.55, z: 89.28}
+  m_LocalScale: {x: 4.1378, y: 4.1378, z: 4.1378}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 145
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &228494316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4798,6 +5151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunRack_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f60d5941ff2dbb945a3dc3bf15f71fda, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5159,6 +5516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillar_Blockout (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5437,6 +5798,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5739,7 +6104,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!108 &299639868
 Light:
@@ -5753,7 +6118,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5792,7 +6157,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5810,14 +6175,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299639867}
-  m_LocalRotation: {x: 0.33079913, y: -0.0329763, z: 0.3034621, w: 0.8929699}
+  m_LocalRotation: {x: 0.35953352, y: 0.37497833, z: 0.35476783, w: 0.77734596}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
-  m_LocalEulerAnglesHint: {x: 37.647, y: 10.322, z: 41.066}
+  m_LocalEulerAnglesHint: {x: 17.032, y: 61.225, z: 59.188}
 --- !u!114 &299639870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5896,6 +6261,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6373,6 +6742,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7022,6 +7395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7312,6 +7689,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7698,6 +8079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillar_Blockout (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8008,6 +8393,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8442,6 +8831,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9148,6 +9541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9298,6 +9695,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9504,7 +9905,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1429985586}
+    - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1429985587}
   m_SourcePrefab: {fileID: 100100000, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+--- !u!4 &452463680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+  m_PrefabInstance: {fileID: 452463679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &454397561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10064,6 +10473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10214,6 +10627,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10727,6 +11144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10853,6 +11274,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11378,6 +11803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11566,6 +11995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11626,6 +12059,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11691,6 +12128,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11896,6 +12337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Door_Double_Blockout (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7c43b31fc57e2c44a7a3b99054dce13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12061,6 +12506,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13186,6 +13635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13612,6 +14065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13987,6 +14444,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109328663cdbf6c47a6183cd46d49576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &692837814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692837816}
+  - component: {fileID: 692837815}
+  m_Layer: 4
+  m_Name: lightingtest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &692837815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692837814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: d186af5337ccaf34fafbec8b85a01159, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &692837816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692837814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.370308, y: 18.342491, z: 94.53253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 144
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &698534707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14042,6 +14548,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14170,6 +14680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14296,6 +14810,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a82ea46336b25654eb9448bba4c32f04, type: 3}
       propertyPath: m_Name
       value: SM_Stairs_blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a82ea46336b25654eb9448bba4c32f04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14627,6 +15145,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15271,6 +15793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunRack_Low
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f60d5941ff2dbb945a3dc3bf15f71fda, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15331,6 +15857,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16478,6 +17008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16831,6 +17365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16891,6 +17429,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17030,6 +17572,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17181,6 +17727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17752,6 +18302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17812,6 +18366,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17974,6 +18532,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b1fb6b9441283564eb3f4d92e09a9ad3, type: 3}
       propertyPath: m_Name
       value: SM_Window_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1fb6b9441283564eb3f4d92e09a9ad3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18885,6 +19447,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20466,6 +21032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20526,6 +21096,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20591,6 +21165,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20846,6 +21424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21063,6 +21645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21279,6 +21865,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21716,6 +22306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21972,6 +22566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22194,6 +22792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22333,9 +22935,9 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 1
-  m_BakeBackend: 1
+  m_BakeBackend: 2
   m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
+  m_BakeResolution: 20
   m_Padding: 2
   m_LightmapCompression: 3
   m_AO: 0
@@ -22362,8 +22964,8 @@ LightingSettings:
   m_PVREnvironmentSampleCount: 256
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
+  m_PVRBounces: 4
+  m_PVRMinBounces: 0
   m_PVREnvironmentImportanceSampling: 1
   m_PVRFilteringMode: 1
   m_PVRDenoiserTypeDirect: 1
@@ -22584,6 +23186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22648,6 +23254,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a82ea46336b25654eb9448bba4c32f04, type: 3}
       propertyPath: m_Name
       value: SM_Stairs_blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a82ea46336b25654eb9448bba4c32f04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22927,6 +23537,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
       propertyPath: m_Name
       value: SM_Pillar_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23806,6 +24420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24308,6 +24926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24446,6 +25068,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 94e5a7a2e3334e54f84a1ce973e0101e, type: 3}
       propertyPath: m_Name
       value: SM_Door_Single_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 94e5a7a2e3334e54f84a1ce973e0101e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24854,6 +25480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25089,6 +25719,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25576,6 +26210,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26183,6 +26821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26629,6 +27271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26689,6 +27335,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 94e5a7a2e3334e54f84a1ce973e0101e, type: 3}
       propertyPath: m_Name
       value: SM_Door_Single_Blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 94e5a7a2e3334e54f84a1ce973e0101e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26930,6 +27580,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27252,6 +27906,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28350,6 +29008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28404,6 +29066,66 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1429985587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429985581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 452463680}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &1431034331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28899,6 +29621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29115,6 +29841,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
       propertyPath: m_Name
       value: SM_Pillar_Blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29347,6 +30077,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29792,6 +30526,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a7c43b31fc57e2c44a7a3b99054dce13, type: 3}
       propertyPath: m_Name
       value: SM_Door_Double_Blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7c43b31fc57e2c44a7a3b99054dce13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30935,6 +31673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31218,6 +31960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31459,6 +32205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31618,6 +32368,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31872,6 +32626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GunRack_Low (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f60d5941ff2dbb945a3dc3bf15f71fda, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31933,6 +32691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31993,6 +32755,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32983,6 +33749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33692,6 +34462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vending Machine (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e28b966bce1fb4042bfa7a4af2d4b461, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33756,6 +34530,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34092,6 +34870,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35085,6 +35867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35644,6 +36430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35799,6 +36589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Door_Double_Blockout (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7c43b31fc57e2c44a7a3b99054dce13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35863,6 +36657,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36147,6 +36945,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36587,6 +37389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36651,6 +37457,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36773,6 +37583,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
       propertyPath: m_Name
       value: SM_Pillar_Blockout (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b786032242f90cc42a5a04773e00490e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38129,6 +38943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38442,6 +39260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Medium_Blockout (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6880e79ca89fae54599905d551df4707, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38709,6 +39531,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39894,6 +40720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Stairs_blockout (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a82ea46336b25654eb9448bba4c32f04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40959,6 +41789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Large_Blockout (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e6f0e3ec05e99e4695413966408e233, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41312,6 +42146,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
       propertyPath: m_Name
       value: SM_Floor_4x4_Blockout (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9002ba9fd7d0c4180dcea0980eadc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
