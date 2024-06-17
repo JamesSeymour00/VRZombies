@@ -19,12 +19,6 @@ public class WeaponScr : MonoBehaviour
 	private GameObject ShootingTarget;
 	public bool b_isHeld;
 
-	private void Update()
-	{
-		Debug.DrawRay(t_gunTip.position, t_gunTip.forward, Color.blue);
-		Debug.DrawRay(transform.position, transform.forward * -1.5f, Color.red);
-	}
-
 	private void OnEnable()
 	{
 		f_fireRate = so_weaponData.f_fireRate;
